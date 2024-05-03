@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0x0htbwgkeaw"]
+
+[ext_resource type="Texture2D" uid="uid://1ddawl4b8qr6" path="res://Images/Backgrounds/backgroundCastles.png" id="1_miadf"]
+
+[sub_resource type="FontVariation" id="FontVariation_y2hr5"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackgroundCastles" type="Sprite2D" parent="."]
+position = Vector2(579, 325.5)
+scale = Vector2(1.16797, 0.680664)
+texture = ExtResource("1_miadf")
+
+[node name="Title" type="Label" parent="BackgroundCastles"]
+anchors_preset = -1
+anchor_left = 0.499
+anchor_top = 0.124
+anchor_right = 0.499
+anchor_bottom = 0.124
+offset_left = -856.876
+offset_top = -586.086
+offset_right = -119.876
+offset_bottom = -427.087
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_y2hr5")
+theme_override_font_sizes/font_size = 60
+text = "E-Learning Spelling Game
+"
+
+[node name="Game1" type="Button" parent="BackgroundCastles"]
+offset_left = -80.4816
+offset_top = -322.479
+offset_right = 81.5184
+offset_bottom = -165.479
+text = "Match and Learn
+"
+
+[node name="Game2" type="Button" parent="BackgroundCastles"]
+offset_left = -81.3378
+offset_top = -81.538
+offset_right = 80.6622
+offset_bottom = 75.462
+text = "3 Pics 1 Word
+"
+
+[node name="Game3" type="Button" parent="BackgroundCastles"]
+offset_left = -78.7692
+offset_top = 204.947
+offset_right = 83.2308
+offset_bottom = 361.947
+text = "Find the Word"
