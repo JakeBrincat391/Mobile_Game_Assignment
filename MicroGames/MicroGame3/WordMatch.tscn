@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjvuj0u7o4o5n"]
+
+[ext_resource type="Texture2D" uid="uid://nyoyv73csukq" path="res://Images/Backgrounds/backgroundColorGrass.png" id="1_b4d62"]
+
+[node name="WordMatch" type="Node2D"]
+
+[node name="BackgroundColorGrass" type="Sprite2D" parent="."]
+position = Vector2(576.5, 339)
+scale = Vector2(1.18457, 0.701172)
+texture = ExtResource("1_b4d62")

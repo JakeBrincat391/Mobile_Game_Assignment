@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="MicroGames"
+run/main_scene="res://Menu/Menu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Transition="*res://Transition/Transition.tscn"
 
 [rendering]
 

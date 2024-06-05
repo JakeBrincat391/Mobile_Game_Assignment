@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq6ntcs0asejj"]
+
+[ext_resource type="Texture2D" uid="uid://di8b8pu1fdtmv" path="res://Images/Backgrounds/backgroundColorForest.png" id="1_xxolw"]
+
+[node name="MatchAndLearn" type="Node2D"]
+
+[node name="BackgroundColorForest" type="Sprite2D" parent="."]
+position = Vector2(577, 329)
+scale = Vector2(1.16602, 0.694336)
+texture = ExtResource("1_xxolw")

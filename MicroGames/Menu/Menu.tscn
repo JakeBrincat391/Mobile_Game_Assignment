@@ -1,6 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://c0x0htbwgkeaw"]
+[gd_scene load_steps=7 format=3 uid="uid://c0x0htbwgkeaw"]
 
 [ext_resource type="Texture2D" uid="uid://1ddawl4b8qr6" path="res://Images/Backgrounds/backgroundCastles.png" id="1_miadf"]
+[ext_resource type="Texture2D" uid="uid://cgpgndnywwn6d" path="res://Images/Thumbnails/WordMatch.jpg" id="2_6k1lo"]
+[ext_resource type="Texture2D" uid="uid://d2xsxuei8gdiu" path="res://Images/Thumbnails/3Pics1Word.jpg" id="3_883ce"]
+[ext_resource type="Script" path="res://Menu/menu.gd" id="3_ts2hr"]
+[ext_resource type="Texture2D" uid="uid://b4avddqoplc02" path="res://Images/Thumbnails/FindWord.jpg" id="4_p5btn"]
 
 [sub_resource type="FontVariation" id="FontVariation_y2hr5"]
 
@@ -35,24 +39,44 @@ text = "E-Learning Spelling Game
 "
 
 [node name="Game1" type="Button" parent="BackgroundCastles"]
-offset_left = -80.4816
-offset_top = -322.479
-offset_right = 81.5184
-offset_bottom = -165.479
-text = "Match and Learn
-"
+offset_left = -430.662
+offset_top = -84.4763
+offset_right = -206.662
+offset_bottom = 184.524
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+icon = ExtResource("2_6k1lo")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("3_ts2hr")
 
 [node name="Game2" type="Button" parent="BackgroundCastles"]
-offset_left = -81.3378
+offset_left = -133.565
 offset_top = -81.538
-offset_right = 80.6622
-offset_bottom = 75.462
-text = "3 Pics 1 Word
-"
+offset_right = 119.435
+offset_bottom = 191.462
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+icon = ExtResource("3_883ce")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("3_ts2hr")
 
 [node name="Game3" type="Button" parent="BackgroundCastles"]
-offset_left = -78.7692
-offset_top = 204.947
-offset_right = 83.2308
-offset_bottom = 361.947
-text = "Find the Word"
+offset_left = 196.923
+offset_top = -77.1306
+offset_right = 408.923
+offset_bottom = 193.869
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+icon = ExtResource("4_p5btn")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("3_ts2hr")
+
+[connection signal="pressed" from="BackgroundCastles/Game1" to="BackgroundCastles/Game1" method="_on_pressed"]
+[connection signal="button_down" from="BackgroundCastles/Game2" to="BackgroundCastles/Game2" method="_on_button_down"]
+[connection signal="button_up" from="BackgroundCastles/Game3" to="BackgroundCastles/Game3" method="_on_button_up"]

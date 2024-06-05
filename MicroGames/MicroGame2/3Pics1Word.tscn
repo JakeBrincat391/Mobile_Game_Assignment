@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dehqdikyhgtby"]
+
+[ext_resource type="Texture2D" uid="uid://dyjl4ivlqjkie" path="res://Images/Backgrounds/backgroundColorFall.png" id="1_vc8ye"]
+
+[node name="3Pics1Word" type="Node2D"]
+
+[node name="BackgroundColorFall" type="Sprite2D" parent="."]
+position = Vector2(575.5, 325.5)
+scale = Vector2(1.15527, 0.674805)
+texture = ExtResource("1_vc8ye")
