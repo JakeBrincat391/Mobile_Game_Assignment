@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccayg4wl5ig1c"]
+
+[ext_resource type="Script" path="res://GameManager/Dragging.gd" id="1_7ceyw"]
+[ext_resource type="Texture2D" uid="uid://dx4sxwlvbcp27" path="res://Images/Letters/Blue/letter_A.png" id="2_rotfd"]
+
+[node name="Letters" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7ceyw")
+
+[node name="Letter" type="Sprite2D" parent="."]
+position = Vector2(251, 191)
+texture = ExtResource("2_rotfd")

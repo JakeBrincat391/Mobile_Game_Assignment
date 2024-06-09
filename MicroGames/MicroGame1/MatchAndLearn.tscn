@@ -1,10 +1,33 @@
-[gd_scene load_steps=2 format=3 uid="uid://dq6ntcs0asejj"]
+[gd_scene load_steps=3 format=3 uid="uid://dq6ntcs0asejj"]
 
+[ext_resource type="Script" path="res://MicroGame1/MatchAndLearn.gd" id="1_6p5up"]
 [ext_resource type="Texture2D" uid="uid://di8b8pu1fdtmv" path="res://Images/Backgrounds/backgroundColorForest.png" id="1_xxolw"]
 
 [node name="MatchAndLearn" type="Node2D"]
+script = ExtResource("1_6p5up")
 
 [node name="BackgroundColorForest" type="Sprite2D" parent="."]
 position = Vector2(577, 329)
 scale = Vector2(1.16602, 0.694336)
 texture = ExtResource("1_xxolw")
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(595, 103)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Guess" type="Label" parent="UI"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 438.0
+offset_right = 1121.0
+offset_bottom = 627.0
+theme_override_colors/font_color = Color(0.368627, 0.368627, 0.368627, 1)
+theme_override_font_sizes/font_size = 100
+text = "Chicken
+"
+horizontal_alignment = 1

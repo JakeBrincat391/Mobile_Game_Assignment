@@ -1,11 +1,17 @@
 extends Node
 
+@onready var guess = $UI/Guess
+var word = "EXAMPLE"
+var letters = word.split("")
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	create_draggable_letters()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func create_draggable_letters():
+	var draggable_scene = preload("res://GameManager/Letters.tscn")
+	for letter in letters:
+		var letter_instance = draggable_scene.instantiate()
+		letter_instance.letter = letter
+		letter_instance.update_letter_image()
+		add_child(letter_instance)
+		letter_instance.rect_position = Vector2(randi() % 800, randi() % 600)
